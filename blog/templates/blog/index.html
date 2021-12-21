@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+home {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+ {% include "partials/_search.html" %}
+ {% include "partials/_articles.html" %}
+ {% include "partials/_pagination.html" %}
+ {% include "partials/_footer.html" %}
+{% endblock content %}
